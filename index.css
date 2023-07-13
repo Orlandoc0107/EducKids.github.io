@@ -105,7 +105,19 @@ body {
 
 header {
   grid-area: header;
-  background-color: var(--color-base);
+  background-image: url("img/header.jpg");
+  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
+  /* border: auto solid #7a7777; */
+  /* border-radius: 3%; */
+  /* Aqui encontraras el codigo del Logo */
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo titulo";
+  /* padding: auto; */
+  /* margin: auto; */
+  /* width: 100%; */
+  /* height: auto; */
 }
 
 header .titulo {

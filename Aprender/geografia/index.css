@@ -10,7 +10,9 @@ body {
   padding: 0;
 }
 
-
+#map {
+  height: 100%;
+}
 
 :root {
   --color-1: #790d31;
