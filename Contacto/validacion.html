@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de Datos</title>
+    <link href="../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="/img/icono.png">
+    <title>Validación</title>
+  </head>
+  <body>
+    <div>
+      
+      <h1>Datos ingresados:</h1>
+      <p> Hola, <span id="nombre"></span> <span id="apellido"></span> Gracias por contactar con nosotros ,</p>
+      <p>Tienes, <span id="edad"></span> años / DNI: <span id="dni"></span></p>
+      <p>Tu Correo Electrónico, <span id="email"></span> se toma en cuenta para futuras consultas.</p>
+      <br>
+      <p> Gracias por contactarnos!</p>
+      <br>
+      <hr>
+      <p>Tu Mensaje fue el siguiente ; <p>
+
+      </p><span id="texto"></span></p>
+    </div>
+    <br>
+    <hr>
+    <div>
+      <h4>Para regresar al Home por favor has clic <a href="../index.html" title="Inicio">Aqui</a></h4>
+      <p></p>
+    </div>
+    <script>
+      // Obtener los datos enviados en el formulario
+      const params = new URLSearchParams(window.location.search);
+      const nombre = params.get('nombre');
+      const apellido = params.get('apellido');
+      const edad = params.get('edad');
+      const dni = params.get('dni');
+      const email = params.get('email');
+      const texto = params.get('texto');
+
+      // Mostrar los datos en la página
+      document.getElementById('nombre').innerText = nombre;
+      document.getElementById('apellido').innerText = apellido;
+      document.getElementById('edad').innerText = edad;
+      document.getElementById('dni').innerText = dni;
+      document.getElementById('email').innerText = email;
+      document.getElementById('texto').innerText = texto;
+    </script>
+  </body>
+</html>

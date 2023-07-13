@@ -1,0 +1,101 @@
+
+
+/* Estahoja de Estilo es unicamente para el recibo*/
+
+body{
+  background-color: white;
+}
+
+.recibo {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    max-width: 700px;
+    background-color: #abddc4;
+  }
+  
+  .recibo h1, .recibo h2 {
+    text-align: center;
+  }
+  
+  .recibo caption {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+  }
+
+  .infor {
+    text-align:right;
+  }
+  
+  .recibo hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .recibo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .recibo th, .recibo td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .recibo thead th {
+    background-color: #ffffff;
+  }
+  
+  .recibo tbody td:first-child, .recibo tbody th:first-child {
+    text-align: left;
+  }
+  
+  .recibo tfoot th {
+    background-color: #ffffff;
+  }
+  
+  .recibo tfoot td {
+    font-weight: bold;
+    background-color: #ffffff;
+  }
+  
+  .recibo tfoot td:last-child {
+    text-align: right;
+  }
+  
+  .recibo #fecha-hora {
+    font-weight: bold;
+  }
+  
+  .recibo #receipt {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  
+  .colorido {
+    background-color: #ffffff;
+  }
+
+  /* Medidas */
+
+/*
+400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+
+  .recibo caption {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 50%;
+  }
+
+}

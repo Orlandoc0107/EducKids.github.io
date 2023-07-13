@@ -1,0 +1,711 @@
+/* importacio de Fonts de Google */
+@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+/* Creamos Variable de colores para nuetro css */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+:root {
+  --color-1: #790d31;
+  --color-1-0: #d61354;
+  /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+  --color-2: #DD6E42;
+  --color-3: #F94A29;
+  --color-2-0: #DD6E4295;
+  --color-3-0: #F94A2995;
+  --color-4: #FCE22A;
+  --color-5: #BEE7E8;
+  --color-6: #30E3DF;
+  --color-7: #000000;
+  --color-8: #A9A9A9;
+  --color-9: #D2B48C;
+  --color-10: #C0C0C0;
+  --color-11: #FFD700;
+  --color-12: #D3D3D3;
+  --color-13: #FFFFFF;
+  --color-14: #87CEEB;
+  --color-15: #00CED1;
+  --color-16: #00FF7F;
+  --color-17: #7FFF00;
+  --color-18: #FFE5B4;
+  --color-19: #FF69B4;
+  --color-20: #800080;
+  --color-21: #FFA500;
+  --color-22: #FF0000;
+  --color-23: #FFFF00;
+  --color-24: #00FF00;
+  --color-25: #0000FF;
+  --color-26: #E6E6FA;
+  --color-principal: #abddc4;
+  --color-30claro: #ea9c94;
+  --color-31: #eb7067;
+}
+
+/*
+Plantenado definiciones 
+*/
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+/* configuramos el Body Para que trabaje con grid */
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+  /* background-image: url('img/body.jpg'); */
+  background-color: var(--color-base);
+  font-family: 'Schoolbell', cursive;
+  background-size: cover;
+  gap: 5%;
+}
+
+/* HEADER style
+=========================================== */
+
+header {
+  grid-area: header;
+  background-image: url('img/header.jpg');
+  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
+  /* border: auto solid #7a7777; */
+  /* border-radius: 3%; */
+  /* Aqui encontraras el codigo del Logo */
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo titulo";
+  /* padding: auto; */
+  /* margin: auto; */
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+header .titulo {
+  grid-area: titulo;
+  padding: auto;
+  margin: auto;
+  font-size: 1vw;
+}
+
+header .logo {
+  grid-area: logo;
+  margin: 0;
+  padding: 0;
+  width: 300%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-width: 30%
+}
+
+
+/* SECTION style
+===========================================*/
+
+section {
+  grid-area: section;
+  width: 100%;
+  align-content: center;
+  text-align: justify;
+}
+
+.contenedor {
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+  /* grid-template-rows: repeat(6, auto); */
+  grid-template-areas:
+    "intro-geo"
+    "widgets"
+    "googlemaps"
+    "botones-cont"
+    "video-cont"
+    "banderas";
+  /* background-color: blueviolet; */
+  padding: 10px;
+  grid-gap: 10px;
+  /* margin: 3%; */
+}
+
+.intro-geo {
+  grid-area: "intro-geo";
+  /* width: 100%; */
+  /* text-align: justify; */
+  align-items: center;
+  /* height: auto; */
+  /* display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2,auto);
+  grid-template-areas: 
+    "intro intro"
+    "mapa-1 mapa-2"; */
+}
+
+.widgets {
+  /* width: 90%; */
+  grid-area: "widgets";
+  align-items: center;
+}
+
+.widget-2 {
+  /* width: 90%; */
+  grid-area: "widget-2";
+  align-items: center;
+}
+
+.googlemaps {
+  /* width: 90%; */
+  /* height: auto; */
+  /* display: grid; */
+  grid-area: "googlemaps";
+  align-items: center;
+}
+
+.botones-cont {
+  grid-area: "botones-cont";
+  align-items: center;
+}
+
+.video-cont {
+  grid-area: "video-cont";
+  align-items: center;
+}
+
+.banderas {
+  /* width: 90%; */
+  /* height: auto; */
+  /* display: grid; */
+  grid-area: "banderas";
+  align-items: center;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+section button {
+  /* Estilos para cada botón individual */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+section button:hover {
+  /* Estilos al pasar el mouse por encima de los botones */
+  background-color: var(--color-principal);
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  display: grid;
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 80%;
+  /* The width is the width of the web page */
+  text-align: center;
+  align-content: center;
+}
+
+
+/* FOOTER style
+===========================================*/
+
+footer {
+  grid-area: footer;
+  /* background-image: url('img/footer.jpg'); */
+  background-color: #abddc4;
+  color: white;
+  box-shadow: auto rgba(0, 0, 0, 0.3);
+  border: auto solid #7a7777;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "div-boton1 div-boton2 div-boton3";
+  padding: auto;
+  margin: auto;
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+}
+
+footer .div-boton1 {
+  grid-area: div-boton1;
+  padding: auto;
+  margin: auto;
+}
+
+footer .div-boton2 {
+  grid-area: div-boton2;
+  padding: auto;
+  margin: auto;
+}
+
+footer .div-boton3 {
+  grid-area: div-boton3;
+  padding: auto;
+  margin: auto;
+}
+
+
+/* MEDIDAS
+===========================================
+*/
+
+/*400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 600px */
+
+@media only screen and (max-width: 600px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 650 */
+@media only screen and (max-width: 650px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*850*/
+
+@media only screen and (max-width: 850px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 700%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*768 */
+
+@media only screen and (max-width: 768px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*800 */
+
+@media only screen and (max-width: 800px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 600%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*992*/
+
+@media only screen and (max-width: 992px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 600%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 600px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 1000 */
+
+@media only screen and (max-width: 1000px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 500%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 600px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*1200*/
+@media only screen and (max-width: 1200px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 500%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 600px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 1300 */
+
+@media only screen and (max-width: 1300px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 120%;
+  }
+
+  header .logo {
+    width: 500%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 600px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}

@@ -1,0 +1,10 @@
+<span> 
+Creditos
+https://scratch.mit.edu/projects/810508731/
+
+
+ ▶︎Pon la pelota en el mismo tanque del mismo color que la pelota para anotar.<br>
+<br>▶︎Límite de tiempo: 30 segundos
+<br>▶︎ Récord mundial: se mostrará la puntuación más alta entre los que jugaron el juego. </p>
+Scratch es un motor de videojuegos desarrollado por MIT Media Lab. <br>​ Su principal característica consiste en que permite el desarrollo de habilidades mentales mediante el aprendizaje de la programación sin tener conocimientos profundos sobre el código.<br>
+</span> 

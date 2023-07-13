@@ -1,0 +1,5 @@
+  <h1>La Respuesta es?</h1>
+  <p> Tienes 9 y te comes 3 cuantos te quedan ?</p>
+  <p id="pregunta"></p>
+  <input type="number" id="respuesta">
+  <button onclick="Resta( 9, -3)">Comprobar</button>

@@ -1,0 +1,4 @@
+<div>
+<img src="img/ejemplos/suma1.jpg" alt="Texto alternativo" width="300" height="200" class="imagen-destacada" style="border: 1px solid black;">
+
+</div>

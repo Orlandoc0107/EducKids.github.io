@@ -1,0 +1,161 @@
+:root {
+    --color-1: #790d31;
+    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es color pero mas claro */
+    --color-2: #DD6E42;
+    --color-3: #F94A29;
+    --color-2-0: #DD6E4295;
+    --color-3-0: #F94A2995;
+    --color-4: #FCE22A;
+    --color-5: #BEE7E8;
+    --color-6: #30E3DF;
+    --color-7: #000000;
+    --color-8: #A9A9A9;
+    --color-9: #D2B48C;
+    --color-10: #C0C0C0;
+    --color-11: #FFD700;
+    --color-12: #D3D3D3;
+    --color-13: #FFFFFF;
+    --color-14: #87CEEB;
+    --color-15: #00CED1;
+    --color-16: #00FF7F;
+    --color-17: #7FFF00;
+    --color-18: #FFE5B4;
+    --color-19: #FF69B4;
+    --color-20: #800080;
+    --color-21: #FFA500;
+    --color-22: #FF0000;
+    --color-23: #FFFF00;
+    --color-24: #00FF00;
+    --color-25: #0000FF;
+    --color-26: #E6E6FA;
+    --color-principal: #abddc4;
+    --color-30claro: #ea9c94;
+    --color-31: #eb7067;
+}
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-principal);
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+nav {
+  background-color:var(--color-principal);
+  padding: 10px;
+}
+
+.botoneras {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.botoneras button {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  color:#000000;
+  background-color:var(--color-5);
+  border: none;
+  cursor: pointer;
+}
+
+.botoneras button:hover {
+  background-color: #1a93b86b;
+  font-size:larger;
+}
+
+/* Estilos de la sección 1 */
+.section1 {
+  background-color:var(--color-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos de la sección 2 */
+.section2 {
+  background-color:var(--color-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Estilos del contenido */
+#contenido {
+  padding: 20px;
+}
+
+#contenido2 {
+  padding: 5px;
+  text-align: justify;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Medidas */
+
+/* MEDIDAS
+===========================================
+*/
+/*400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+  nav {
+    padding: 1px;
+  }
+
+  nav button {
+    font-size: 6px;
+    margin-bottom: 5px;
+  }
+
+  nav button:hover {
+    font-size: x-small;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px; /* Se ajusta la altura según tus necesidades */
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 50%;
+  }
+}
+
+
+/* 650 */
+@media only screen and (max-width: 650px) {
+  nav {
+    padding: 1px;
+  }
+
+  nav button {
+    font-size: 6px;
+    margin-bottom: 5px;
+  }
+
+  nav button:hover {
+    font-size: x-small;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px; /* Se ajusta la altura según tus necesidades */
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 50%;
+  }
+}

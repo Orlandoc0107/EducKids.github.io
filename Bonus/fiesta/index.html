@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>EducaKids - Fiesta</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nuestro sitio web está diseñado para ayudar a los niños a aprender mientras se divierten. Encuentra recursos educativos divertidos y estimulantes para tus hijos.">
+        <meta name="keywords" content="EducaKids">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+        <!-- Aqui inicia las llamadas de fontawesome -->
+        <link href="../../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+        <link href="../../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+        <link href="../../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+        <link rel="icon" href="img/icono.png">
+        <!-- Aqui finaliza las llamadas de font awesome -->
+    </head>
+<body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" width="auto" height="150px">
+            </div>
+            <div class="titulo">
+                <h1>
+                    <i class="fa-solid fa-e fa-flip fa-2xl" style="color:rgb(100, 0, 255);"></i>
+                    <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-u fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-c fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-a fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-k fa-flip fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                    <i class="fa-solid fa-i fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                    <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                    <i class="fa-solid fa-s fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                </h1>
+              </div>
+        </header>
+            <nav>
+        <ul style="list-style: none;">
+            <li><i class="fa-solid fa-house-chimney "><a href="../../index.html" title="Inicio">Inicio</a></i></li>
+            <li><i class="fa-solid fa-chalkboard-user"><a href="../../Aprender/" title="Aprender"> Aprender</a></i></li>
+            <li><i class="fa-regular fa-briefcase"><a href="../../Acerca/" title="Acerca de"> Acerca de</a></i></li>
+            <li><i class="fa-solid fa-hands-holding-circle"><a href="Bonus/" title="Bonus"> Bonus</a></i></li>
+            <li><i class="fa-solid fa-comment-dots"><a href="../../Contacto/" title="Contacto"> Contacto</a></i></li>
+            <li onclick="mostrarMenu()"><a href="#" id="boton-menu" title="Esconder Menu"><i class="fa-solid fa-arrow-left fa-bounce"></i></a></li>
+            <!--Enlaces para Matemáticas , Lengua y Geografía estaran en la Pagina Aprender -->
+        </ul>
+        <br>
+            </nav>
+            <aside>
+                <br>
+                <h2> Aprender </h2>
+                <br>
+                <p>Aprender Matematicas</p>
+                <a href="../../Aprender/matematicas/" title="Matematicas"><img src="img/aside/matematicas.png" ></a>
+                <br>
+                <br>
+                <p>Aprender Geografia</p>
+                <a href="../../Aprender/geografia/" title="geografia"><img src="img/aside/geografia.png" ></a>
+                <br>
+                <br>
+                <p>Aprender Lengua</p>
+                <a href="../../Aprender/ingles/" title="Ingles"><img src="img/aside/lenguaje.png" ></a>
+                <br>
+            <hr>
+            <h2>Bonus</h2>
+            <br>
+            <p>Realiza tus Calculos Para tus Fiestas</p>
+            <a href="index.html" title="Fiesta"><img src="img/bonus/fiesta.png" ></a>
+            <br>
+            <br>
+            <p>Juega con la Calculadora Loca</p>
+            <a href="../calculadora/" title="Fiesta"><img src="img/bonus/calculadora.png" ></a>
+            <br>
+            <br>
+            <p>Descubre los Diferentes Juegos y Divertidos Para ti</p>
+            <a href="../juegos/" title="Juego"><img src="img/bonus/juegos.png"></a>
+            <br>
+            <br>
+            <p> Te gustan los Cuentos ?</p>
+            <a href="../cuentos/" title="Juego"><img src="img/bonus/cuentos.png"></a>
+            <br>
+            <hr>
+            <br>
+                <br>
+                <h2>Scratch</h2>
+                <br>
+                <p>Crea tus propio videos Juegos con Scratch</p>
+                <br>
+                <a href="https://scratch.mit.edu/">
+                    <img src="img/aside/scratch.png" title="Scratch">
+                </a>
+                <br>
+                <h1>Disney API</h1>
+                <br>
+                <p>Busca tus Personajes Favoritos de Disney</p>
+                <br>
+                <a href="../../Bonus/Disney/" target="_blank">
+                    <img src="../../img/aside/disney.png" title="Disney">
+                </a>
+                <br>
+            </aside>
+            <section>
+                <div class="header-botones">
+                    <p><a href="#" onclick="mostrarMenu()" title="Abrir Menu"><i
+                                class="fa-solid fa-bars fa-bounce fa-2xl"></i></a></p>
+                </div>
+                <br>
+                <p>Esta Hoja es presentada como un Demo de compra de Articulos, No es Real </p><br>
+                <br>
+                <br>
+                <div class="Presupuesto">
+                    <form id="miFormulario" action="recibo.html" method="POST" name="Presupuesto">
+                        <h2>Servicio a Contratar</h2>
+                        <div>
+                            <label for="ComboBase"> Combo Base $30,000.00</label>
+                            <input type="radio" id="ComboBase" name="Combo" value="ComboBase"
+                                title=" 2 hs de animacion para 20 ninos + 20 adultos">
+                        </div>
+                        <div>
+                            <label for="ComboSuper"> Combo Super $35,000.00</label>
+                            <input type="radio" id="ComboSuper" name="Combo" value="ComboSuper"
+                                title="Esta incluido el Combo Base + Snaks para Ninos">
+                        </div>
+                        <div>
+                            <label for="producto3"> Combo Full $40,000.00</label>
+                            <input type="radio" id="ComboFull" name="Combo" value="ComboFull"
+                                title="Esta includo el Combo Super + snacks para adulto">
+                            <br><br>
+                        </div>
+        
+                        <table>
+                            <caption>
+                                <h2>Adicionales</h2>
+                            </caption>
+                            <thead>
+                                <th colspan="3"> Seleccione y Ingrese la Cantidad que desee contratar <br><br></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Servicios
+                                    </td>
+                                    <td>
+                                        Costo
+                                    </td>
+                                    <td>
+                                        Cantidad
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="HoraExtra" name="HoraExtra" value="HoraExtra">
+                                        <label for="HoraExtra">Hora Extra</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 2,500.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadHoraExtra" name="cantidadHoraExtra" min="0" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="Globologia" name="Globologia" value="Globologia">
+                                        <label for="Globologia">Globologia</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 3,500.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadGlobologia" name="cantidadGlobologia" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="MaquillajeArtistico" name="MaquillajeArtistico"
+                                            value="MaquillajeArtistico">
+                                        <label for="MaquillajeArtistico">Maquillaje Artistico</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 4,500.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadMaquillajeArtistico" name="cantidadMaquillajeArtistico"
+                                            min="0" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="ShowDeTiteres" name="ShowDeTiteres" value="ShowDeTiteres">
+                                        <label for="ShowDeTiteres">Show De Titeres</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 4,000.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadShowDeTiteres" name="cantidadShowDeTiteres" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="CabinaDeFotos" name="CabinaDeFotos" value="CabinaDeFotos">
+                                        <label for="CabinaDeFotos">Cabina De Fotos</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 5,500.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadCabinaDeFotos" name="cantidadCabinaDeFotos" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="ShowDeMagia" name="ShowDeMagia" value="ShowDeMagia">
+                                        <label for="ShowDeMagia">Show De Magia</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 5,000.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadShowDeMagia" name="cantidadShowDeMagia" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="DescartablesParaNino" name="DescartablesParaNino"
+                                            value="DescartablesParaNino">
+                                        <label for="DescartablesParaNino">Descartables Para Niño</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 750.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadDescartablesParaNino"
+                                            name="cantidadDescartablesParaNino" min="0" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="DescartablesParaAdultos" name="DescartablesParaAdultos"
+                                            value="DescartablesParaAdultos">
+                                        <label for="producto4">Descartables Para Adultos</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 750.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadDescartablesParaAdultos"
+                                            name="cantidadDescartablesParaAdulto" min="0" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="Torta" name="Torta" value="Torta">
+                                        <label for="Torta">Torta de Cumpleaños</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 5,500.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadTorta" name="cantidadTorta" min="0" value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="Sorpresitas" name="Sorpresitas" value="Sorpresitas">
+                                        <label for="Sorpresitas">Sorpresitas (Valor por niños )</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 500.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadSorpresitas" name="cantidadSorpresitas" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="Coordinador" name="Coordinador" value="Coordinador">
+                                        <label for="Coordinador">Coordinador extra</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 3,000.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadCoordinador" name="cantidadCoordinadora" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="NinoAdicional" name="NinoAdicional" value="NinoAdicional">
+                                        <label for="NinoAdicional">Niño Adicional</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 450.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadNinoAdicional" name="cantidadNinoAdicional" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="AdultoAdicional" name="AdultoAdicional"
+                                            value="AdultoAdicional">
+                                        <label for="AdultoAdicional">Adulto Adicional</label>
+                                    </td>
+                                    <td>
+                                        <p>$ 450.00</p>
+                                    </td>
+                                    <td>
+                                        <input type="number" id="cantidadAdultoAdicional" name="cantidadAdultoAdicional" min="0"
+                                            value="0">
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                        <br><br><br>
+                        <script type="text/javascript" src="fiesta.js"></script>
+                        <h3>Detalles de Los Servicios </h3>
+                        <p><b>Combo Base : </b> Viene Incluido 2 hs de animacion para 20 Niños + 20 adultos</p><br><br>
+                        <p><b>Combo Super : </b> Esta incluido el Combo Base + Snaks para Niños </p><br><br>
+                        <p><b>Combo Full : </b> Esta incluido Combo Super + snaks para adultos</p><br><br>
+                        <br><br>
+                        <p>IMPORTANTE: Porfavor complete Su Solicitud e Ingrese sus datos</p>
+                        <div class="datosCliente">
+                            <table><tr>
+                            <td><label for="nombre">Nombre:</label></td>
+                            <td><input type="text" name="nombre" id="nombre" maxlength="20" required></td>
+                        </tr><br>
+                        <tr>
+                            <td><label for="apellido">Apellido:</label></td>
+                            <td><input type="text" name="apellido" id="apellido" maxlength="25" required></td>
+                        </tr><br>
+                        <tr>
+                            <td><label for="dni">DNI:</label></td>
+                            <td><input type="number" name="dni" id="dni" required></td>
+                        </tr><br>
+                        <tr>
+                            <td><label for="email">Correo:</label></td>
+                            <td><input type="email" name="email" id="email" required></td>
+                        </tr></table></div><br><br><br>
+                        <button type="button" onclick="calcularTotal()">Calcular total</button>
+                        <button type="button" id="borrar">Borrar todo</button>
+                        <button type="button" onclick="recibo()"> Generar Recibo </button>
+                        <h3 id="total"></h3>
+                    </form>
+                </div>
+            </section>
+        <footer>
+            <div class="div-boton1">
+                    <p>
+                        <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids" target="_blank" ><i class="fa-brands fa-youtube fa-2xl" style="color: #2ec27e;"></i></a>
+                    </p>
+                    </div>
+                    <div class="div-boton2">
+                        <a href="../../Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl " style="color: #ff8b06;"></i></a>
+                    </div>
+                    <div class="div-boton3">
+                        <a href="../juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl" style="color: #061fff;"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->      
+                    </div>
+        </footer>
+</body>
+</html>

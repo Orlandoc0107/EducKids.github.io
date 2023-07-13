@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo</title>
+    <link rel="stylesheet" type="text/css" href="recibo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+            <!-- Aqui inicia las llamadas de fontawesome -->
+            <link href="../../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+            <link href="../../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+            <link href="../../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+            <link rel="icon" href="img/icono.png">
+            <!-- Aqui finaliza las llamadas de font awesome -->
+</head>
+<body>
+  <div class="recibo" id="receipt">
+    <table border="1">
+      <caption>
+        <dib class="infor">
+          <h1>
+            <i class="fa-solid fa-e fa-fade fa-2xs" style="color:rgb(100, 0, 255);"></i>
+            <i class="fa-solid fa-d fa-fade fa-2xs" style="color:rgb(102, 0, 255);"></i>
+            <i class="fa-solid fa-u fa-fade fa-2xs" style="color:rgb(102, 0, 255);"></i>
+            <i class="fa-solid fa-c fa-fade fa-2xs" style="color:rgb(102, 0, 255);"></i>
+            <i class="fa-solid fa-a fa-fade fa-2xs" style="color:rgb(102, 0, 255);"></i>
+            <i class="fa-solid fa-k fa-fade fa-2xs" style="color:rgb(255, 0, 120);"></i>
+            <i class="fa-solid fa-i fa-fade fa-2xs" style="color:rgb(255, 0, 120);"></i>
+            <i class="fa-solid fa-d fa-fade fa-2xs" style="color:rgb(255, 0, 120);"></i>
+            <i class="fa-solid fa-s fa-fade fa-2xs" style="color:rgb(255, 0, 120);"></i>
+        </h1>
+          <h5>Dirección: Av. EducaKids</h5>
+          <h5>Teléfono: (123) 456-78910</h5>
+          <h5>Correo electrónico: info@EducaKids.com</h5>
+          <br><br>
+          <h4>Recibo de compra</h4>
+          <p>Fecha : <span id="fecha-hora"></span> </p></dib>
+        </p></caption>
+      <thead>
+        <tr class="colorido">
+          <th>Servicio</th>
+          <th>Precio unitario</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Combo Base</td>
+          <td>$30,000.00</td>
+          <td></td>
+          <td><span id="Base"></span></td>
+        </tr>
+        <tr>
+          <td>Combo Super</td>
+          <td>$35,000.00</td>
+          <td></td>
+          <td><span id="Super"></span></td>
+        </tr>
+        <tr>
+          <td>Combo Full</td>
+          <td>$40,000.00</td>
+          <td></td>
+          <td><span id="Full"></span></td>
+        </tr>
+        <tr>
+          <th>Adicionales</th>
+          <th>Costo</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>Hora Extra</td>
+          <td>$2,500.00</td>
+          <td><span id="cantidadHoraExtra"></span></td>
+          <td><span id="Hora"></span></td>
+        </tr>
+        <tr>
+          <td>Globologia</td>
+          <td>$3,500.00</td>
+          <td><span id="cantidadGlobologia"></span></td>
+          <td><span id="Globos"></span></td>
+        </tr>
+        <tr>
+          <td>Maquillaje Artistico</td>
+          <td>$4,500.00</td>
+          <td><span id="cantidadMaquillajeArtistico"></span></td>
+          <td><span id="Maquillaje"></span></td>
+        </tr>
+        <tr>
+          <td>Show De Titeres</td>
+          <td>$4,000.00</td>
+          <td><span id="cantidadShoeDeTiteres"></span></td>
+          <td><span id="Titeres"></span></td>
+        </tr>
+        <tr>
+          <td>Cabina De Fotos</td>
+          <td>$5,500.00</td>
+          <td><span id="cantidadCabinaDeFotos"></span></td>
+          <td><span id="Cabina"></span></td>
+        </tr>
+        <tr>
+          <td>Show De Magia</td>
+          <td>$5000.00</td>
+          <td><span id="cantidadShowDeMagia"></span></td>
+          <td><span id="Magia"></span></td>
+        </tr>
+        <tr>
+          <td>Descartables Para Ninos</td>
+          <td>$750.00</td>
+          <td><span id="cantidadDescartablesParaNino"></span></td>
+          <td><span id="DescartablesParaN"></span></td>
+        </tr>
+        <tr>
+          <td>Descartables Para Adultos</td>
+          <td>$750.00</td>
+          <td><span id="cantidadDescartablesParaAdultos"></span></td>
+          <td><span id="DescartablesParaA"></span></td>
+        </tr>
+        <tr>
+          <td>Torta de Cumpleanos</td>
+          <td>$5500.00</td>
+          <td><span id="cantidadTorta"></span></td>
+          <td><span id="TortaTotal"></span></td>
+        </tr>
+        <tr>
+          <td>Sorpesitas (valor por nino)</td>
+          <td>$500.00</td>
+          <td><span id="cantidadSorpresitas"></span></td>
+          <td><span id="Sorpresas"></span></td>
+        </tr>
+        <tr>
+          <td>Coordinador extra</td>
+          <td>$3,000.00</td>
+          <td><span id="cantidadCoordinador"></span></td>
+          <td><span id="Coordi"></span></td>
+        </tr>
+        <tr>
+          <td>Nino Adicional</td>
+          <td>$450.00</td>
+          <td><span id="cantidadNinoAdicional"></span></td>
+          <td><span id="Nadicional"></span></td>
+        </tr>
+        <tr>
+          <td>Adulto Adicional</td>
+          <td>$450.00</td>
+          <td><span id="cantidadAdultoAdicional"></span></td>
+          <td><span id="Aadicional"></span></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total:</td>
+          <td><span id="total"></span></td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr>
+    <p>Cliente: <span id="nombre"></span> <span id="apellido"></span></p>
+    <p>DNI: <span id="dni"></span></p>
+    <p>Correo electrónico: <span id="email"></span></p>
+    <p>Su Codigo de Compra es <span id="uno"></span> - <span id="numeroAleatorio"></span> - <span id="tres"></span></p>
+  </div>
+      <br>
+      <div>
+        <h4>Para regresar al Home , Porfavor Clic en <a href="../../index.html" title="Inicio">Aqui</a></h4>
+      </div>
+      <!-- Js reciendo datos del Formulario -->
+      <script>
+        /// Hora Actual
+        var fecha = new Date();
+  var opciones = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric"
+  };
+  var fecha_actual = fecha.toLocaleDateString("es-ES", opciones);
+  document.getElementById("fecha-hora").innerHTML = fecha_actual;
+  ///
+  const params = new URLSearchParams(window.location.search);
+      const nombre = params.get('nombre');
+      const apellido = params.get('apellido');
+      const dni = params.get('dni');
+      const email = params.get('email');
+      const total = params.get('total');
+      var Base = params.get('Base');
+      var Super = params.get('Super');
+      var Full = params.get('Full');
+      var Hora = params.get('Hora');
+      var cantidadHoraExtra = params.get ('cantidadHoraExtra');
+      var Globos = params.get('Globos');
+      var cantidadGlobologia = params.get ('cantidadGlobologia');
+      var Maquillaje = params.get ('Maquillaje');
+      var cantidadMaquillajeArtistico = params.get ('cantidadMaquillajeArtistico');
+      var Titeres = params.get ('Titeres');
+      var cantidadShoeDeTiteres = params.get ('cantidadShoeDeTiteres');
+      var Cabina = params.get ('Cabina');
+      var cantidadCabinaDeFotos = params.get ('cantidadCabinaDeFotos');
+      var Magia = params.get ('Magia');
+      var cantidadShowDeMagia = params.get ('cantidadShowDeMagia');
+      var DescartablesParaN = params.get ('DescartablesParaN');
+      var cantidadDescartablesParaNino = params.get ('cantidadDescartablesParaNino');
+      var DescartablesParaA = params.get ('DescartablesParaA');
+      var cantidadDescartablesParaAdultos = params.get ('cantidadDescartablesParaAdultos');
+      var TortaTotal = params.get ('TortaTotal');
+      var cantidadTorta = params.get ('cantidadTorta');
+      var Sorpresas = params.get ('Sorpresas');
+      var cantidadSorpresitas = params.get ('cantidadSorpresitas');
+      var Coordi = params.get ('Coordi');
+      var cantidadCoordinador = params.get ('cantidadCoordinador');
+      var Nadicional = params.get ('Nadicional');
+      var cantidadNinoAdicional = params.get ('cantidadNinoAdicional');
+      var Aadicional = params.get ('Aadicional');
+      var cantidadAdultoAdicional = params.get ('cantidadAdultoAdicional');
+
+      // Mostrar los datos en la página
+      if (typeof Base === 'undefined' || isNaN(Base)) {
+        Base = 0;
+      }
+      if (typeof Super === 'undefined' || isNaN(Super)) {
+        Super = 0;
+      }
+      if (typeof Full === 'undefined' || isNaN(Full)) {
+        Full = 0;
+      }
+      if (typeof Hora === 'undefined' || isNaN(Hora)) {
+        Hora = 0;
+        cantidadHoraExtra = 0;
+      }
+      if (typeof Globos === 'undefined' || isNaN(Globos)){
+        Globos = 0;
+        cantidadGlobologia = 0;
+      }
+      if (typeof Maquillaje === 'undefined' || isNaN(Maquillaje)){
+        Maquillaje = 0;
+        cantidadMaquillajeArtistico = 0;
+      }
+      if (typeof Titeres === 'undefined' || isNaN(Titeres)){
+        Titeres = 0;
+        cantidadShoeDeTiteres = 0;
+      }
+      if (typeof Cabina === 'undefined' || isNaN(Cabina)){
+        Cabina = 0;
+        cantidadCabinaDeFotos = 0;
+      }
+      if (typeof Magia === 'undefined' || isNaN(Magia)){
+        Magia = 0;
+        cantidadShowDeMagia = 0;
+      }
+      if (typeof DescartablesParaN === 'undefined' || isNaN(DescartablesParaN)){
+        DescartablesParaN = 0;
+        cantidadDescartablesParaNino = 0;
+      }
+      if (typeof DescartablesParaA === 'undefined' || isNaN(DescartablesParaA)){
+        DescartablesParaA = 0;
+        cantidadDescartablesParaAdultos = 0;
+      }
+      if (typeof TortaTotal === 'undefined' || isNaN(TortaTotal)){
+        TortaTotal = 0;
+        antidadTorta = 0;
+      }
+      if (typeof Sorpresas === 'undefined' || isNaN(Sorpresas)){
+        Sorpresas = 0;
+        cantidadSorpresitas = 0;
+      }
+      if (typeof Coordi=== 'undefined' || isNaN(Coordi)){
+        Coordi = 0;
+        cantidadCoordinador = 0;
+      }
+      if (typeof Nadicional === 'undefined' || isNaN(Nadicional)){
+        Nadicional = 0;
+        cantidadNinoAdicional = 0;
+      }
+      if (typeof Aadicional === 'undefined' || isNaN(Aadicional)){
+        Aadicional = 0;
+        cantidadAdultoAdicional = 0;
+      }
+
+      document.getElementById('nombre').innerText = nombre;
+      document.getElementById('apellido').innerText = apellido;
+      document.getElementById('dni').innerText = dni;
+      document.getElementById('email').innerText = email;
+      document.getElementById('total').innerText = total;
+      document.getElementById('Base').innerText = Base;
+      document.getElementById('Super').innerText = Super;
+      document.getElementById('Full').innerText = Full;
+      document.getElementById('Hora').innerText = Hora;
+      document.getElementById('cantidadHoraExtra').innerText = cantidadHoraExtra;
+      document.getElementById('Globos').innerText = Globos;
+      document.getElementById('cantidadGlobologia').innerText = cantidadGlobologia;
+      document.getElementById('Maquillaje').innerText = Maquillaje;
+      document.getElementById('cantidadMaquillajeArtistico').innerText = cantidadMaquillajeArtistico;
+      document.getElementById('Titeres').innerText = Titeres;
+      document.getElementById('cantidadShoeDeTiteres').innerText = cantidadShoeDeTiteres;
+      document.getElementById('Cabina').innerText = Cabina;
+      document.getElementById('cantidadCabinaDeFotos').innerText = cantidadCabinaDeFotos;
+      document.getElementById('Magia').innerText = Magia;
+      document.getElementById('cantidadShowDeMagia').innerText = cantidadShowDeMagia;
+      document.getElementById('DescartablesParaN').innerText = DescartablesParaN;
+      document.getElementById('cantidadDescartablesParaNino').innerText = cantidadDescartablesParaNino;
+      document.getElementById('DescartablesParaA').innerText = DescartablesParaA;
+      document.getElementById('cantidadDescartablesParaAdultos').innerText = cantidadDescartablesParaAdultos;
+      document.getElementById('TortaTotal').innerText = TortaTotal;
+      document.getElementById('cantidadTorta').innerText = cantidadTorta;
+      document.getElementById('Sorpresas').innerText = Sorpresas;
+      document.getElementById('cantidadSorpresitas').innerText = cantidadSorpresitas;
+      document.getElementById('Coordi').innerText = Coordi;
+      document.getElementById('cantidadCoordinador').innerText = cantidadCoordinador;
+      document.getElementById('Nadicional').innerText = Nadicional;
+      document.getElementById('cantidadNinoAdicional').innerText = cantidadNinoAdicional;
+      document.getElementById('Aadicional').innerText = Aadicional;
+      document.getElementById('cantidadAdultoAdicional').innerText = cantidadAdultoAdicional;
+      //
+
+      //Generar Codigo de Compra 
+
+      const dos = params.get('dni');
+      document.getElementById('uno').innerText = dos;
+      const tres = params.get('total');
+      document.getElementById('tres').innerText = tres;
+const divNumeroAleatorio = document.getElementById('numeroAleatorio');
+const numeroAleatorio = Math.floor(Math.random() * dos);
+divNumeroAleatorio.textContent = `${numeroAleatorio}`;
+
+      </script>
+</body>
+</html>

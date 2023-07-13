@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>EducaKids - Aprender</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nuestro sitio web está diseñado para ayudar a los niños a aprender mientras se divierten. Encuentra recursos educativos divertidos y estimulantes para tus hijos.">
+        <meta name="keywords" content="EducaKids">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+        <!-- Aqui inicia las llamadas de fontawesome -->
+        <link href="../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+        <link href="../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+        <link href="../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+        <link rel="icon" href="img/icono.png">
+        <!-- Aqui finaliza las llamadas de font awesome -->
+    </head>
+<body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" width="auto" height="150px">
+            </div>
+            <div class="titulo">
+                <h1>
+                    <i class="fa-solid fa-e fa-flip fa-2xl" style="color:rgb(100, 0, 255);"></i>
+                    <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-u fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-c fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-a fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                    <i class="fa-solid fa-k fa-flip fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                    <i class="fa-solid fa-i fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                    <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                    <i class="fa-solid fa-s fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                </h1>
+            </div>
+        </header>
+            <nav>
+                <ul style="list-style: none;">
+                    <li><i class="fa-solid fa-house-chimney "><a href="../index.html" title="Inicio">Inicio</a></i></li>
+                    <li><i class="fa-solid fa-chalkboard-user"><a href="index.html" title="Aprender"> Aprender</a></i></li>
+                    <li><i class="fa-regular fa-briefcase"><a href="../Acerca/" title="Acerca de"> Acerca de</a></i></li>
+                    <li><i class="fa-solid fa-hands-holding-circle"><a href="../Bonus/" title="Bonus"> Bonus</a></i></li>
+                    <li><i class="fa-solid fa-comment-dots"><a href="../Contacto/" title="Contacto"> Contacto</a></i></li>
+                    <li onclick="mostrarMenu()"><a href="#" id="boton-menu" title="Esconder Menu"><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <!--Enlaces para Matemáticas , Lengua y Geografía estaran en la Pagina Aprender -->
+                </ul>
+                <br>
+            </nav>
+            <aside>
+                <br>
+                <h2> Aprender </h2>
+                <br>
+                <a href="matematicas/" title="Matematicas"><img src="img/aside/matematicas.png" ></a>
+                <br>
+                <br>
+                <a href="geografia/" title="geografia"><img src="img/aside/geografia.png" ></a>
+                <br>
+                <br>
+                <a href="ingles/" title="Ingles"><img src="img/aside/lenguaje.png" ></a>
+                <br>
+                <br>
+                <br>
+                <a href="../Aprender/preguntas/" target="_blank">
+                    <img src="../img/aside/pregunta.png" title="Preguntas y Respuesta">
+                </a>
+                <br>
+            <hr>
+            <h2>Bonus</h2>
+            <br>
+            <a href="../Bonus/fiesta/" title="Fiesta"><img src="img/bonus/fiesta.png" ></a>
+            <br>
+            <br>
+            <a href="../Bonus/calculadora/" title="Fiesta"><img src="img/bonus/calculadora.png" ></a>
+            <br>
+            <br>
+            <a href="../Bonus/juegos/" title="Juego"><img src="img/bonus/juegos.png"></a>
+            <br>
+            <br>
+            <a href="../Bonus/cuentos/" title="Juego"><img src="img/bonus/cuentos.png"></a>
+            <br>
+            <hr>
+            <br>
+                <br>
+                <h2>Scratch</h2>
+                <br>
+                <p>Crea tus propio videos Juegos con Scratch</p>
+                <br>
+                <a href="https://scratch.mit.edu/">
+                    <img src="img/aside/scratch.png" title="Scratch">
+                </a>
+                <br>
+                <h1>Disney API</h1>
+                <br>
+                <p>Busca tus Personajes Favoritos de Disney</p>
+                <br>
+                <a href="../Bonus/Disney/" target="_blank">
+                    <img src="../img/aside/disney.png" title="Disney">
+                </a>
+                <br>
+            </aside>
+            <section>
+                <div class="header-botones">
+                    <br>
+                    <p><a href="#" onclick="mostrarMenu()" title="Abrir Menu"><i class="fa-solid fa-bars fa-bounce fa-2xl"></i></a>
+                        <br>
+                    <br>
+                </div>
+                <br>
+                <br><br><br>
+                <h1>
+                    <a href="matematicas/" title="Matematicas">
+                        <i class="fa-solid fa-m fa-bounce" style="color: #33d17a;"></i>
+                        <i class="fa-solid fa-a fa-bounce" style="color: #9c4444;"></i>
+                        <i class="fa-solid fa-t fa-bounce" style="color: #f5d000;"></i>
+                        <i class="fa-solid fa-e fa-bounce" style="color: #c4f5da;"></i>
+                        <i class="fa-solid fa-m fa-bounce" style="color: #7491c5;"></i>
+                        <i class="fa-solid fa-a fa-bounce" style="color: #b708da;"></i>
+                        <i class="fa-solid fa-t fa-bounce" style="color: #e7507d;"></i>
+                        <i class="fa-solid fa-i fa-bounce" style="color: #124142;"></i>
+                        <i class="fa-solid fa-c fa-bounce" style="color: #a3eec5;"></i>
+                        <i class="fa-solid fa-a fa-bounce" style="color: #0353ff;"></i>
+                        <i class="fa-solid fa-s fa-bounce" style="color: #d16d33;"></i>
+                    </a>
+                </h1>
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PfE4LrlXLwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br><br><br>
+                <h1>
+                    <a href="ingles/" title="Lenguaje">
+                        <i class="fa-solid fa-i fa-bounce" style="color: #0bff79;"></i>
+                        <i class="fa-solid fa-n fa-bounce" style="color: #ff0000;"></i>
+                        <i class="fa-solid fa-g fa-bounce" style="color: #ffa600;"></i>
+                        <i class="fa-solid fa-l fa-bounce" style="color: #51ff00;"></i>
+                        <i class="fa-solid fa-e fa-bounce" style="color: #003cff;"></i>
+                        <i class="fa-solid fa-s fa-bounce" style="color: #ea00ff;"></i>
+                    </a>
+                </h1>
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gonSsqlNt5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <br><br><br>
+                <h1>
+                    <a href="geografia/" title="Geografia">
+                        <i class="fa-solid fa-g fa-bounce" style="color: #9e0000;"></i>
+                        <i class="fa-solid fa-e fa-bounce" style="color: #8b4f00;"></i>
+                        <i class="fa-solid fa-o fa-bounce" style="color: #00883d;"></i>
+                        <i class="fa-solid fa-g fa-bounce" style="color: #10db2b;"></i>
+                        <i class="fa-solid fa-r fa-bounce" style="color: #c40d44;"></i>
+                        <i class="fa-solid fa-a fa-bounce" style="color: #770868;"></i>
+                        <i class="fa-solid fa-f fa-bounce" style="color: #7a6f0a;"></i>
+                        <i class="fa-solid fa-i fa-bounce" style="color: #50fc9d;"></i>
+                        <i class="fa-solid fa-a fa-bounce" style="color: #04107e;"></i>
+                    </a>
+                </h1>
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-dWZGzr0p88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br><br><br>
+                <br><br>
+            </section>
+        <footer>
+            <div class="div-boton1">
+                    <p>
+                        <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids" target="_blank" ><i class="fa-brands fa-youtube fa-2xl" style="color: #2ec27e;"></i></a>
+                    </p>
+                    </div>
+                    <div class="div-boton2">
+                        <a href="../Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl " style="color: #ff8b06;"></i></a>
+                    </div>
+                    <div class="div-boton3">
+                        <a href="../Bonus/juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl" style="color: #061fff;"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->      
+                    </div>
+        </footer>
+</body>
+</html>

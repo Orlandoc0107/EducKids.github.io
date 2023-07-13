@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Disney.css">
+    <!-- Aqui inicia las llamadas de fontawesome -->
+    <link href="../../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="../../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="../../img/icono.png">
+    <!-- Aqui finaliza las llamadas de font awesome -->
+    <title>EducaKids - API Disney</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../img/logo.png" alt="Logo" width="auto" height="150px">
+        </div>
+        <div class="titulo">
+            <h1>
+                <i class="fa-solid fa-e fa-flip fa-2xl" style="color:rgb(100, 0, 255);"></i>
+                <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-u fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-c fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-a fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-k fa-flip fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                <i class="fa-solid fa-i fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                <i class="fa-solid fa-s fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <div class="header-botones">
+            <p><a href="../../" title="Regresar"><i class="fa-solid fa-bars fa-bounce fa-2xl"></i></a></p>
+        </div><br>
+    </nav>
+    <section>
+        
+            <button onclick="Aleatorio()">Disney</button>
+        <div id="foto" class="foto"></div>
+        <div id="datos" class="datos"></div>
+        <br>
+        <p>Presione el Boton "  Disney " para Generar un Personaje Aleatoriamente y conocer Detalles del mismo.<br> <br>
+            Existen mas de 7400 Personajes... Diviertete!!!</p><br>
+        <br>
+    </section>
+    <aside>
+        <br>
+        <h2> Aprender </h2>
+        <br>
+        <!-- <p>Aprender Matematicas</p> -->
+        <a href="../../Aprender/matematicas/" title="Matematicas"><img src="../../img/aside/matematicas.png"></a>
+        <br>
+        <br>
+        <!-- <p>Aprender Geografia</p> -->
+        <a href="../../Aprender/geografia/" title="geografia"><img src="../../img/aside/geografia.png"></a>
+        <br>
+        <br>
+        <!-- <p>Aprender Lengua</p> -->
+        <a href="../../Aprender/ingles/" title="Ingles"><img src="../../img/aside/lenguaje.png"></a>
+        <br>
+        <hr>
+        <h2>Bonus</h2>
+        <br>
+        <!-- <p>Realiza tus Calculos Para tus Fiestas</p> -->
+        <a href="../../Bonus/fiesta/" title="Presupuesto para Fiestas"><img src="../../img/bonus/fiesta.png"></a>
+        <br>
+        <br>
+        <!-- <p>Juega con la Calculadora Loca</p> -->
+        <a href="../../Bonus/calculadora/" title="Calculadora Loca"><img src="../../img/bonus/calculadora.png"></a>
+        <br>
+        <br>
+        <!-- <p>Descubre los Diferentes Juegos y Divertidos Para ti</p> -->
+        <a href="../../Bonus/juegos/" title="Juego"><img src="../../img/bonus/juegos.png"></a>
+        <br>
+        <br>
+        <!-- <p> Te gustan los Cuentos ?</p> -->
+        <a href="../../Bonus/cuentos/" title="Cuentos"><img src="../../img/bonus/cuentos.png"></a>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h2>Scratch</h2>
+        <br>
+        <p>Crea tus propios videojuegos</p>
+        <br>
+        <a href="https://scratch.mit.edu/" target="_blank">
+            <img src="../../img/aside/scratch.png" title="Scratch">
+        </a>
+        <br>
+        <h1>Disney API</h1>
+        <br>
+        <p>Busca tus Personajes Favoritos de Disney</p>
+        <br>
+        <a href="../../Bonus/Disney/" target="_blank">
+            <img src="../../img/aside/disney.png" title="Disney">
+        </a>
+        <br>
+        <br>
+    </aside>
+    <footer>
+        <div class="div-boton1">
+            <p>
+                <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2xl" style="color: #2ec27e;"></i></a>
+            </p>
+        </div>
+        <div class="div-boton2">
+            <a href="../../Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl "
+                    style="color: #ff8b06;"></i></a>
+        </div>
+        <div class="div-boton3">
+            <a href="../juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl"
+                    style="color: #061fff;"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->
+        </div>
+    </footer>
+    <script src="Disney.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>EducaKids - Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Nuestro sitio web está diseñado para ayudar a los niños a aprender mientras se divierten. Encuentra recursos educativos divertidos y estimulantes para tus hijos.">
+    <meta name="keywords" content="EducaKids">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+    <!-- Aqui inicia las llamadas de fontawesome -->
+    <link href="font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+    <link rel="icon" href="img/icono.png">
+    <!-- Aqui finaliza las llamadas de font awesome -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" width="auto" height="150px">
+        </div>
+        <div class="titulo">
+            <h1>
+                <i class="fa-solid fa-e fa-flip fa-2xl" style="color:rgb(100, 0, 255);"></i>
+                <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-u fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-c fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-a fa-fade fa-2xl" style="color:rgb(102, 0, 255);"></i>
+                <i class="fa-solid fa-k fa-flip fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                <i class="fa-solid fa-i fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                <i class="fa-solid fa-d fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+                <i class="fa-solid fa-s fa-fade fa-2xl" style="color:rgb(255, 0, 120);"></i>
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <ul style="list-style: none;">
+            <li><i class="fa-solid fa-house-chimney "><a href="index.html" title="Inicio">Inicio</a></i></li>
+            <li><i class="fa-solid fa-chalkboard-user"><a href="Aprender/" title="Aprender"> Aprender</a></i></li>
+            <li><i class="fa-regular fa-briefcase"><a href="Acerca/" title="Acerca de"> Acerca de</a></i></li>
+            <li><i class="fa-solid fa-hands-holding-circle"><a href="Bonus/" title="Bonus"> Bonus</a></i></li>
+            <li><i class="fa-solid fa-comment-dots"><a href="Contacto/" title="Contacto"> Contacto</a></i></li>
+            <li onclick="mostrarMenu()"><a href="#" id="boton-menu" title="Esconder Menu"><i
+                        class="fa-solid fa-arrow-left fa-bounce"></i></a></li>
+            <!--Enlaces para Matemáticas , Lengua y Geografía estaran en la Pagina Aprender -->
+        </ul>
+        <br>
+    </nav>
+    <aside>
+        <br>
+        <h1> Aprender </h1>
+        <br>
+        <!-- <p>Aprender Matematicas</p> -->
+        <a href="Aprender/matematicas/" title="Matematicas"><img src="img/aside/matematicas.png"></a>
+        <br>
+        <br>
+        <!-- <p>Aprender Geografia</p> -->
+        <a href="Aprender/geografia/" title="geografia"><img src="img/aside/geografia.png"></a>
+        <br>
+        <br>
+        <!-- <p>Aprender Lengua</p> -->
+        <a href="Aprender/ingles/" title="Ingles"><img src="img/aside/lenguaje.png"></a>
+        <br>
+        <br>
+        <a href="Aprender/preguntas/" target="_blank">
+            <img src="img/aside/pregunta.png" title="Preguntas y Respuesta">
+        </a>
+        <br>
+        <hr>
+        <h1>Bonus</h1>
+        <br>
+        <!-- <p>Realiza tus Calculos Para tus Fiestas</p> -->
+        <a href="Bonus/fiesta/" title="Presupuesto para Fiestas"><img src="img/bonus/fiesta.png"></a>
+        <br>
+        <br>
+        <!-- <p>Juega con la Calculadora Loca</p> -->
+        <a href="Bonus/calculadora/" title="Calculadora Loca"><img src="img/bonus/calculadora.png"></a>
+        <br>
+        <br>
+        <!-- <p>Descubre los Diferentes Juegos y Divertidos Para ti</p> -->
+        <a href="Bonus/juegos/" title="Juego"><img src="img/bonus/juegos.png"></a>
+        <br>
+        <br>
+        <!-- <p> Te gustan los Cuentos ?</p> -->
+        <a href="Bonus/cuentos/" title="Cuentos"><img src="img/bonus/cuentos.png"></a>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Scratch</h1>
+        <br>
+        <p>Crea tus propios videojuegos</p>
+        <br>
+        <a href="https://scratch.mit.edu/" target="_blank">
+            <img src="img/aside/scratch.png" title="Scratch">
+        </a>
+        <h1>Disney API</h1>
+        <br>
+        <p>Busca tus Personajes Favoritos de Disney</p>
+        <br>
+        <a href="Bonus/Disney/" target="_blank">
+            <img src="img/aside/disney.png" title="Disney">
+        </a>
+        <br>
+        
+    </aside>
+    <section>
+        <div class="header-botones">
+            <br>
+            <p><a href="#" onclick="mostrarMenu()" title="Abrir Menu"><i
+                        class="fa-solid fa-bars fa-bounce fa-2xl"></i></a>
+            </p>
+        </div>
+        <div>
+            <br><br>
+            <p>Bienvenidos a EducaKids, una plataforma de aprendizaje diseñada especialmente para <i
+                    class="fa-regular fa-children fa-fade"></i> de 5 a 8 años.
+                <br><br>
+                Nuestra misión es hacer que el aprendizaje sea divertido y emocionante para los más pequeños, fomentando
+                su curiosidad y ayudándoles a desarrollar habilidades esenciales que les serán
+                útiles en su vida académica y personal.
+                <br><br>
+                En nuestra página web, encontrarás una amplia variedad de recursos educativos y actividades,
+                cuidadosamente seleccionados y diseñados por expertos en educación infantil.
+                Desde juegos didácticos y videos educativos hasta actividades interactivas y ejercicios para imprimir.
+                <br><br>
+                EducaKids ofrece una experiencia de aprendizaje completa que se adapta a las necesidades de cada <i
+                    class="fa-regular fa-child fa-fade"></i>.
+                <br><br>
+                Nos enfocamos en enseñar las habilidades básicas de lectura, escritura y matemáticas, así como también
+                en fomentar la creatividad, el pensamiento crítico y el trabajo en equipo.
+                <br><br>
+                Además, todos nuestros contenidos están diseñados para ser accesibles, amigables y atractivos para los
+                <i class="fa-regular fa-children fa-fade"></i>, lo que los hace divertidos y entretenidos.
+                <br><br>
+                En EducaKids, creemos que cada <i class="fa-regular fa-child fa-fade"></i> tiene su propio ritmo y
+                estilo de
+                aprendizaje, por lo que nuestra plataforma está diseñada para adaptarse a las necesidades individuales
+                de cada estudiante.
+                <br><br>
+                Únete a nosotros y comienza a disfrutar de una experiencia educativa única y emocionante que ayudará a
+                tus <i class="fa-regular fa-children fa-fade"></i> a crecer y a desarrollarse en un ambiente seguro,
+                interactivo
+                y divertido.<br><br>
+            </p>
+            <br>
+            <br>
+            <h3 style="font-family: 'Schoolbell'">La importancia de las TIC's en la educación</h3>
+            <!-- <div class="contenedor-video"> -->
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/h40pXhuyNRM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <!-- <iframe class="video" src="https://www.youtube.com/embed/h40pXhuyNRM"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe> -->
+            <!-- </div> -->
+            <br>
+            <br>
+        </div>
+    </section>
+    <footer>
+        <div class="div-boton1">
+            <p>
+                <a href="https://www.youtubekids.com/?hl=es" title="Youtubekids" target="_blank"><i
+                        class="fa-brands fa-youtube fa-2xl" style="color: #2ec27e;"></i></a>
+            </p>
+        </div>
+        <div class="div-boton2">
+            <a href="Contacto/" title="Contacto" target="_blank"><i class="fa-solid fa-comments fa-2xl "
+                    style="color: #ff8b06;"></i></a>
+        </div>
+        <div class="div-boton3">
+            <a href="Bonus/juegos/" title="Juegos"><i class="fa-solid fa-gamepad fa-2xl"
+                    style="color: #061fff;"></i></a><!-- Esto sera un futuro enlace para los miniJuegos-->
+        </div>
+    </footer>
+</body>
+
+</html>

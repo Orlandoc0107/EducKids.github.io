@@ -1,0 +1,17 @@
+<span> 
+Como Jugar 
+<br><br>
+Es un Juego de memoria donde debes encontrar Dos Figuras iguales , una tras otra, Ganaras al completar todos los pares.<br>
+<br>
+Se puede reutilizar para otros juegos educativos o de diversión... <br>Solo debes modificar las tarjetas 1 y 2, 3 y 4 etc hasta la 17 y 18.
+<br> Luego un algoritmo las ordena en forma aleatoria para que el juego siempre sea distinto.
+
+
+Juego de memoria creado a para mis hijos fanáticos de Bajoterra y a veces un poco aburridos en vacaciones
+@LabTeD_benitezm
+
+Juego de Memoria Versión 2
+https://scratch.mit.edu/projects/96180008/
+Quieres probar el juego de duelos de Bajoterra?
+https://scratch.mit.edu/projects/111617387/
+</span>

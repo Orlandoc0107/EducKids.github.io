@@ -1,0 +1,640 @@
+/* importacio de Fonts de Google */
+@import url("https://fonts.googleapis.com/css?family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+/* Creamos Variable de colores para nuetro css */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: #790d31;
+  --color-1-0: #d61354;
+  /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+  --color-2: #dd6e42;
+  --color-3: #f94a29;
+  --color-2-0: #dd6e4295;
+  --color-3-0: #f94a2995;
+  --color-4: #fce22a;
+  --color-5: #bee7e8;
+  --color-6: #30e3df;
+  --color-7: #000000;
+  --color-8: #a9a9a9;
+  --color-9: #d2b48c;
+  --color-10: #c0c0c0;
+  --color-11: #ffd700;
+  --color-12: #d3d3d3;
+  --color-13: #ffffff;
+  --color-14: #87ceeb;
+  --color-15: #00ced1;
+  --color-16: #00ff7f;
+  --color-17: #7fff00;
+  --color-18: #ffe5b4;
+  --color-19: #ff69b4;
+  --color-20: #800080;
+  --color-21: #ffa500;
+  --color-22: #ff0000;
+  --color-23: #ffff00;
+  --color-24: #00ff00;
+  --color-25: #0000ff;
+  --color-26: #e6e6fa;
+  --color-principal: #abddc4;
+  --color-30claro: #ea9c94;
+  --color-31: #eb7067;
+}
+
+/*
+Plantenado definiciones 
+*/
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+/* configuramos el Body Para que trabaje con grid */
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% auto 10%;
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+  /*background-image: url("img/body.jpg");*/
+  font-family: "Schoolbell", cursive;
+  background-size: cover;
+  gap: 5%;
+  /*background-image: url(img/matematica.jpg);*/
+  background-color: #e5e76bb9;
+}
+
+/* HEADER style
+=========================================== */
+
+header {
+  grid-area: header;
+  background-image: url("img/header.jpg");
+  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
+  /* border: auto solid #7a7777; */
+  /* border-radius: 3%; */
+  /* Aqui encontraras el codigo del Logo */
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo titulo";
+  /* padding: auto; */
+  /* margin: auto; */
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+header .titulo {
+  grid-area: titulo;
+  padding: auto;
+  margin: auto;
+  font-size: 1vw;
+}
+
+header .logo {
+  grid-area: logo;
+  margin: 0;
+  padding: 0;
+  width: 300%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-width: 30%;
+}
+
+/* SECTION style
+===========================================*/
+
+section {
+  grid-area: section;
+  padding: 2%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-color: #a9a9a9;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto ;
+  grid-template-areas:
+  "CuadroMenu"
+  "CuadroContenido"
+  "CuadroTexto";
+  border-radius: 5px;
+}
+
+
+
+.CuadroMenu {
+  grid-area: CuadroMenu;
+  width: 100%;
+  height: auto;
+}
+
+.CuadroContenido {
+  grid-area: CuadroContenido;
+  width: 100%;
+  height: auto;
+}
+
+.CuadroTexto {
+  grid-area: CuadroTexto;
+  width: 100%;
+  height: auto;
+}
+
+input, button {
+  background-color: var(--color-principal);
+  border: #790d31;
+  border-radius: 3px;
+  padding: 1%;
+  margin: 1%;
+
+}
+
+input:hover, button:hover {
+  background-color: var(--color-30claro);
+  
+}
+
+
+/* FOOTER style
+===========================================*/
+
+footer {
+  grid-area: footer;
+  /* background-image: url('img/footer.jpg'); */
+  background-color: #abddc4;
+  color: white;
+  box-shadow: auto rgba(0, 0, 0, 0.3);
+  border: auto solid #7a7777;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "div-boton1 div-boton2 div-boton3";
+  padding: auto;
+  margin: auto;
+  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+}
+
+footer .div-boton1 {
+  grid-area: div-boton1;
+  padding: auto;
+  margin: auto;
+}
+
+footer .div-boton2 {
+  grid-area: div-boton2;
+  padding: auto;
+  margin: auto;
+}
+
+footer .div-boton3 {
+  grid-area: div-boton3;
+  padding: auto;
+  margin: auto;
+}
+
+/* MEDIDAS
+===========================================
+*/
+
+/*400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 600px */
+
+@media only screen and (max-width: 600px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 900%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*650*/
+
+@media only screen and (max-width: 650px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 900%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 850*/
+@media only screen and (max-width: 850px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 700%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*768*/
+
+@media only screen and (max-width: 768px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 700%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*800 */
+
+@media only screen and (max-width: 800px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 700%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 992*/
+
+@media only screen and (max-width: 992px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 600%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 1000 */
+
+@media only screen and (max-width: 1000px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 600%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/*1200 */
+
+@media only screen and (max-width: 1200px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 400%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}
+
+/* 1300 */
+
+@media only screen and (max-width: 1300px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 400%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  section input {
+    width: 80px;
+    height: 10px;
+  }
+
+  input[type="text"] {
+    width: 80px;
+    height: 10px;
+  }
+}

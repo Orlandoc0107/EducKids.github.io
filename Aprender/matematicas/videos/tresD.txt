@@ -1,0 +1,4 @@
+  <h1>La Respuesta es?</h1>
+  <p id="pregunta"></p>
+  <input type="number" id="respuesta">
+  <button onclick="Suma( 5, 4)">Comprobar</button>

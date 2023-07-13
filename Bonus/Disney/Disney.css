@@ -1,0 +1,446 @@
+/* importacio de Fonts de Google */
+@import url("https://fonts.googleapis.com/css?family=Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+/* Creamos Variable de colores para nuetro css */
+
+/*
+Importacion de Font Localmente
+*/
+@font-face {
+  font-family: waltograph;
+  src: url("../../font/waltograph/waltograph42.otf") format("opentype"),
+    url("../../font/waltograph/waltographUI.ttf") format("truetype");
+}
+
+:root {
+  --color-1: #790d31;
+  --color-1-0: #d61354;
+  /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+  --color-2: #dd6e42;
+  --color-3: #f94a29;
+  --color-2-0: #dd6e4295;
+  --color-3-0: #f94a2995;
+  --color-4: #fce22a;
+  --color-5: #bee7e8;
+  --color-6: #30e3df;
+  --color-7: #000000;
+  --color-8: #a9a9a9;
+  --color-9: #d2b48c;
+  --color-10: #c0c0c0;
+  --color-11: #ffd700;
+  --color-12: #d3d3d3;
+  --color-13: #ffffff;
+  --color-14: #87ceeb;
+  --color-15: #00ced1;
+  --color-16: #00ff7f;
+  --color-17: #7fff00;
+  --color-18: #ffe5b4;
+  --color-19: #ff69b4;
+  --color-20: #800080;
+  --color-21: #ffa500;
+  --color-22: #ff0000;
+  --color-23: #ffff00;
+  --color-24: #00ff00;
+  --color-25: #0000ff;
+  --color-26: #e6e6fa;
+  --color-principal: #abddc4;
+  --color-30claro: #ea9c94;
+  --color-31: #eb7067;
+}
+
+/*
+Plantenado definiciones 
+*/
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: "waltograph";
+}
+
+/* configuramos el Body Para que trabaje con grid */
+
+body {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  grid-template-rows: 10% auto 5%;
+  grid-template-areas:
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+  /*font-family: 'Schoolbell', cursive;*/
+  background-size: cover;
+}
+
+/* HEADER style
+=========================================== */
+
+header {
+  grid-area: header;
+  background-image: url("../../img/header.jpg");
+  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
+  /* border: auto solid #7a7777; */
+  /* border-radius: 3%; */
+  /* Aqui encontraras el codigo del Logo */
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo titulo";
+  /* padding: auto; */
+  /* margin: auto; */
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+header .titulo {
+  grid-area: titulo;
+  padding: auto;
+  margin: auto;
+  font-size: 1vw;
+}
+
+header .logo {
+  grid-area: logo;
+  margin: 0;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-width: 30%;
+}
+
+/* NAV style
+===========================================*/
+
+nav {
+  grid-area: nav;
+}
+
+/* SECTION style
+===========================================*/
+
+section {
+  margin: 2%;
+  padding: 8%;
+  grid-area: section;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "foto datos";
+  /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+  text-align: center;
+  font-family: "waltograph";
+  font-size: 200%;
+  color-scheme: var(--color-7);
+}
+
+.foto {
+  margin: 2%;
+  grid-area: foto;
+  padding: 0%;
+  background-color: #00ff8023;
+  border-radius: 3%;
+  padding: 10%;
+}
+
+.foto img {
+  width: 250px;
+  height: auto;
+  border-radius: 3px;
+  border-color: rgba(127, 255, 212, 0.411);
+}
+
+.foto:hover {
+  background-color: #e2177d56;
+}
+
+.datos {
+  margin: 0%;
+  padding: 10%;
+  grid-area: datos;
+  background-color: #e2177d56;
+  border-radius: 3%;
+}
+
+.datos:hover {
+  background-color: #00ff8023;
+}
+
+.datos b {
+  color: var(--color-1);
+}
+
+/* ASIDE style
+===========================================*/
+
+aside {
+  grid-area: aside;
+  text-align: center;
+  width: auto;
+  height: auto;
+  background-color: var(--color-30claro);
+  padding: auto;
+  margin: 8%;
+  margin-bottom: 8%;
+}
+
+aside a.no-underline {
+  text-decoration: none;
+}
+
+aside img {
+  max-width: 25%;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Inicio de opacidad */
+aside img:hover {
+  animation: cambia-opacidad 1s infinite;
+  background-color: var(--color-15);
+  border-radius: 80%;
+}
+
+@keyframes cambia-opacidad {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fin  de opacidad */
+
+aside p {
+  text-align: center;
+  padding: 5%;
+  color: var(--color-1);
+}
+
+/* 
+===========================================*/
+
+button {
+  border-radius: 50%;
+  padding: 1%;
+  background-color: var(--color-8);
+  font-family:'waltograph';
+  font-size: 150%;
+  border-style: groove;
+}
+
+button:hover {
+  border-radius: 50%;
+  background-color: var(--color-principal);
+}
+
+aside p:hover {
+  color: var(--color-7);
+}
+
+/* FOOTER style
+===========================================*/
+
+footer {
+  grid-area: footer;
+  /* background-image: url('img/footer.jpg'); */
+  background-color: #abddc4;
+  color: white;
+  box-shadow: auto rgba(0, 0, 0, 0.3);
+  border: auto solid #7a7777;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "div-boton1 div-boton2 div-boton3";
+  padding: auto;
+  margin: auto;
+  margin-top: 8%;
+  width: 100%;
+  height: 100%;
+}
+
+footer .div-boton1 {
+  grid-area: div-boton1;
+  padding: auto;
+  margin: auto;
+}
+
+footer .div-boton2 {
+  grid-area: div-boton2;
+  padding: auto;
+  margin: auto;
+}
+
+footer .div-boton3 {
+  grid-area: div-boton3;
+  padding: auto;
+  margin: auto;
+}
+
+/* MEDIDAS
+===========================================
+*/
+
+/*
+400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+
+  p {
+    font-size: 80%;
+  }
+
+  button{
+    font-size: 100%;
+  }
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 90%;
+    height: 40%;
+  }
+
+  .foto img {
+    width: 0150px;
+    height: auto;
+  }
+
+}
+
+/* 600px */
+
+@media only screen and (max-width: 600px) {
+
+  p {
+    font-size: 80%;
+  }
+
+  button{
+    font-size: 100%;
+  }
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 900%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 90%;
+    height: 40%;
+  }
+
+  .foto img {
+    width: 0150px;
+    height: auto;
+  }
+
+}
+
+/*650*/
+
+@media only screen and (max-width: 650px) {
+
+  p {
+    font-size: 80%;
+  }
+
+  button{
+    font-size: 100%;
+  }
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+  }
+
+  header .logo {
+    width: 800%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 90%;
+    height: 40%;
+  }
+
+  .foto img {
+    width: 0150px;
+    height: auto;
+  }
+
+}

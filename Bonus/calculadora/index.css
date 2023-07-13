@@ -1,0 +1,555 @@
+
+/* importacio de Fonts de Google */
+@import url('https://fonts.googleapis.com/css?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+/* Creamos Variable de colores para nuetro css */
+
+:root {
+    --color-1: #790d31;
+    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
+    --color-2: #DD6E42;
+    --color-3: #F94A29;
+    --color-2-0: #DD6E4295;
+    --color-3-0: #F94A2995;
+    --color-4: #FCE22A;
+    --color-5: #BEE7E8;
+    --color-6: #30E3DF;
+    --color-7: #000000;
+    --color-8: #A9A9A9;
+    ---color-9: #D2B48C;
+    --color-10: #C0C0C0;
+    --color-11: #FFD700;
+    --color-12: #D3D3D3;
+    --color-13: #FFFFFF;
+    --color-14: #87CEEB;
+    --color-15: #00CED1;
+    --color-16: #00FF7F;
+    --color-17: #7FFF00;
+    --color-18: #FFE5B4;
+    --color-19: #FF69B4;
+    --color-20: #800080;
+    --color-21: #FFA500;
+    --color-22: #FF0000;
+    --color-23: #FFFF00;
+    --color-24: #00FF00;
+    --color-25: #0000FF;
+    --color-26: #E6E6FA;
+    --color-principal: #abddc4;
+    --color-30claro: #ea9c94;
+    --color-31: #eb7067;
+}
+
+/*
+Plantenado definiciones 
+*/
+
+* {
+padding: 0%;
+margin: 0%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+/* configuramos el Body Para que trabaje con grid */
+
+body {
+  display: grid;
+  grid-template-columns: 10% 60% 30%  ;
+  grid-template-rows: 10% auto 5%;
+  grid-template-areas:
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+    background-image: url('img/body.jpg');
+  font-family: 'Schoolbell', cursive;
+  background-size: cover;
+}
+
+/* Aqui Inicia el Header */
+header {
+  grid-area: header;
+  background-image: url('img/header.jpg');
+  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
+  /* border: auto solid #7a7777; */
+  /* border-radius: 3%; */
+  /* Aqui encontraras el codigo del Logo */
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo titulo";
+  /* padding: auto; */
+  /* margin: auto; */
+  /* width: 100%; */
+  /* height: auto; */
+}
+header .titulo {
+  grid-area: titulo;
+  padding: auto;
+  margin: auto;
+  font-size: 1vw;
+} 
+
+header .logo {
+  grid-area: logo;
+  margin: 0;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-width: 30%
+}
+
+/* Aqui comenzamos a configurar el Nav */
+nav {
+  grid-area: nav;
+  position: fixed;
+  top: 40px;
+  bottom: 80px;
+  left: -450px;
+  width: 10%;
+  height: 30%;
+  transition: all 0.9s ease;
+  border-radius: 8%;
+  z-index: 5;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  background-image: url('img/nav.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  font-size: 100%;
+  padding: 2%;
+  text-align: left;
+}
+
+nav li {
+padding-bottom: 5%;
+padding-left: 0%;
+}
+
+nav:hover{
+  background-color:var(--color-principal);
+}
+
+nav li:hover{
+  font-size:x-large;
+}
+/* Aqui comenzamos a configurar la Section */
+
+nav {
+  width: max-content;
+}
+
+section {
+  grid-area: section;
+  font-size:larger;
+}
+section iframe{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
+
+.calculadora {
+  text-align: center;
+  background-size:cover;
+}
+
+input {
+  text-align: center;
+  border-color: #00FF00;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 50px;
+  animation-name: animacion1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-style: groove;
+  border: 50px solid transparent;
+  border-image: url('img/borderscalculadora.png') 210 round;
+}
+
+@keyframes animacion1 {
+  from {
+  transform:translate3d(300px);
+  }
+  to {
+  transform:translate3d(-300px);
+  }
+}
+
+.suma{
+  animation-name: sumaMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes sumaMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.resta{
+  animation-name: restaMove;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes restaMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+.division{
+  animation-name: divisionMove;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes divisionMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.multiplicacion{
+  animation-name: multiplicacionMove;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes multiplicacionMove {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+/*
+input:hover {
+  background-color:var(--color-20);
+  color: var(--color-26);
+  border-color:var(--color-4);
+  border-radius:100% ;
+}
+*/
+
+button {
+  text-align: center;
+  background-color: #d61354;
+  border-color: #00FF00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+button:hover {
+  background-color:var(--color-13);
+  border-color:var(--color-4);
+}
+
+.resultado {
+  font-size: 80px;
+  color:var(--color-7);
+}
+
+.resultado:hover {
+  font-size: 120px;
+  color:var(--color-);
+}
+
+aside {
+  grid-area: aside;
+  text-align: center;
+  width: auto;
+  height: 100%;
+  background-color: var(--color-30claro);
+  padding: auto;
+  margin: 8%;
+  margin-bottom: 8%;
+}
+
+aside a.no-underline {
+  text-decoration: none;
+}
+
+aside img {
+  max-width: 25%;
+  margin: 10px;
+  text-align: center;
+}
+/* Inicio de opacidad */
+aside img:hover {
+  animation: cambia-opacidad 1s infinite;
+  background-color:var(--color-15);
+  border-radius: 80%;
+}
+
+@keyframes cambia-opacidad {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Fin  de opacidad */
+
+aside p{
+  text-align: center;
+  padding: 5%;
+  color:var(--color-1);
+}
+
+aside p:hover{
+  color:var(--color-7);
+}
+
+/* */
+
+footer {
+grid-area: footer;
+background-image: url('img/footer.jpg');
+color: white;
+box-shadow: auto rgba(0, 0, 0, 0.3);
+border: auto solid #7a7777;
+border-radius: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-template-areas:
+"div-boton1 div-boton2 div-boton3";
+padding: auto;
+margin: auto;
+margin-top: 8%;
+width: 100%;
+height: 100%;
+}
+
+footer .div-boton1{
+grid-area: div-boton1;
+padding: auto;
+margin: auto;
+}
+footer .div-boton2{
+grid-area: div-boton2;
+padding: auto;
+margin: auto;
+}
+footer .div-boton3{
+grid-area: div-boton3;
+padding: auto;
+margin: auto;
+}
+
+/* */
+
+
+
+
+/* medidas 
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+}
+
+}
+*/
+@media screen and (min-width:1920px){
+  section iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+  }
+  
+} /* desktop de alta resolución: 1920 x 1080 */
+
+@media screen and (min-width:768px) and (max-width:1024px){
+
+} /* Tableta: 768 x 1024 */
+
+@media screen and (max-width: 360px){
+
+  section iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+} /* Movil */
+
+@media screen and (max-width: 640px){
+
+}
+
+
+/* MEDIDAS
+===========================================
+*/
+
+/*400px X 600px
+Extra small devices (phones, 
+600px and down)*/
+
+@media only screen and (max-width: 400px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 100%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+/* 600px */
+
+@media only screen and (max-width: 600px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 110%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 60px;
+    height: 80px;
+  }
+
+
+}
+
+/* 650*/
+@media only screen and (max-width: 650px) {
+  
+  aside h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  section h1, h2, h3, h4, h5, h6 {
+    font-size: 110%;
+  }
+
+  header .logo {
+    width: 1000%;
+    height: auto;
+  }
+  header .titulo {
+    width: 110%;
+    height: auto;
+  }
+
+  nav{
+    font-size: 90%;
+  }
+
+  section iframe {
+    width: 80%;
+    height: 15%;
+  }
+
+  section input {
+    width: 60px;
+    height: 80px;
+  }
+
+
+}

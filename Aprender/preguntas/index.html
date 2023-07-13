@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EducaKids - Geografia Preguntas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nuestro sitio web está diseñado para ayudar a los niños a aprender mientras se divierten. Encuentra recursos educativos divertidos y estimulantes para tus hijos.">
+  <meta name="keywords" content="EducaKids">
+  <link rel="stylesheet" type="text/css" href="preguntas.css">
+  <!-- Aqui inicia las llamadas de fontawesome -->
+  <link href="../../font/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+  <link href="../../font/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+  <link href="../../font/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+  <!-- Aqui finaliza las llamadas de font awesome -->
+  <link rel="icon" href="../img/icono.png">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+  <header>
+    <div class="titulo">
+      <h1>
+        <i class="fa-solid fa-e fa-fade " style="color:rgb(100, 0, 255);"></i>
+        <i class="fa-solid fa-d fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-u fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-c fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-a fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-k fa-fade " style="color:rgb(255, 0, 120);"></i>
+        <i class="fa-solid fa-i fa-fade " style="color:rgb(255, 0, 120);"></i>
+        <i class="fa-solid fa-d fa-fade " style="color:rgb(255, 0, 120);"></i>
+        <i class="fa-solid fa-s fa-fade " style="color:rgb(255, 0, 120);"></i>
+      </h1>
+    </div>
+  </header>
+  <nav>
+    <div class="header-botones">
+      <p><a href="../../" title="Regresar">
+        <!-- <i class="fa-solid fa-bars fa-bounce fa-2xl"></i> -->
+        <i class="fa-solid fa-house fa-fade fa-2xl"></i>
+      </a></p>
+    </div>
+    <div class="botones">
+          <button onclick="matematicas()">Matematicas</button><br>
+          <button onclick="geografia()">Geografia</button><br>
+          <button onclick="ingles()">Inglés</button><br>
+    </div>
+  </nav>
+  <section>
+    <div class="preguntas">
+      <!-- Aqui comienza la invocacion de la app -->
+      <div id="app" v-cloak>
+        <p v-if="mensaje">{{ mensaje }}</p>
+        <p>Preguntas</p> 
+      </div> 
+    </div>
+    <!--
+      -->
+      <div class="puntos">
+        <p class="mensaje"></p>
+        <p class="puntuacion"></p>
+    </div>
+  </section>
+  <footer>
+    <div class="titulo">
+      <h1>
+        <i class="fa-solid fa-p fa-fade " style="color:rgb(100, 0, 255);"></i>
+        <i class="fa-solid fa-r fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-e fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-g fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-u fa-fade " style="color:rgb(102, 0, 255);"></i>
+        <i class="fa-solid fa-n fa-fade " style="color:rgb(255, 0, 120);"></i>
+        <i class="fa-solid fa-t fa-fade " style="color:rgb(255, 0, 120);"></i>
+        <i class="fa-solid fa-a fa-fade " style="color:rgb(255, 0, 120);"></i>
+        <i class="fa-solid fa-s fa-fade " style="color:rgb(255, 0, 120);"></i>
+      </h1>
+      <script src="preguntas.js"></script>
+    </div>
+  </footer>
+</body>
+</html>
