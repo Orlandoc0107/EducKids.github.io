@@ -5,7 +5,7 @@ function Aleatorio() {
   foto.innerHTML = '';
 
   let id = Math.floor(Math.random() * 7450);
-  let url = 'https://api.disneyapi.dev/character/' + id;
+  let url = 'https://api.disneyapi.dev/character/'+id;
 
   fetch(url)
     .then(response => {
