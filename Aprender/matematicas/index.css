@@ -13,7 +13,6 @@ body {
 :root {
   --color-1: #790d31;
   --color-1-0: #d61354;
-  /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
   --color-2: #dd6e42;
   --color-3: #f94a29;
   --color-2-0: #dd6e4295;
@@ -46,10 +45,6 @@ body {
   --color-31: #eb7067;
 }
 
-/*
-Plantenado definiciones 
-*/
-
 * {
   padding: 0%;
   margin: 0%;
@@ -70,7 +65,6 @@ h6 {
   margin-top: 5%;
 }
 
-/* configuramos el Body Para que trabaje con grid */
 
 body {
   display: grid;
@@ -80,32 +74,20 @@ body {
     "header"
     "section"
     "footer";
-  /*background-image: url("img/body.jpg");*/
   font-family: "Schoolbell", cursive;
   background-size: cover;
   gap: 5%;
-  /*background-image: url(img/matematica.jpg);*/
   background-color: #e5e76bb9;
 }
 
-/* HEADER style
-=========================================== */
 
 header {
   grid-area: header;
   background-image: url("img/header.jpg");
-  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
-  /* border: auto solid #7a7777; */
-  /* border-radius: 3%; */
-  /* Aqui encontraras el codigo del Logo */
   display: grid;
   grid-template-columns: 1fr 9fr;
   grid-template-rows: auto;
   grid-template-areas: "logo titulo";
-  /* padding: auto; */
-  /* margin: auto; */
-  /* width: 100%; */
-  /* height: auto; */
 }
 
 header .titulo {
@@ -128,9 +110,6 @@ header .logo {
   height: auto;
   max-width: 30%;
 }
-
-/* SECTION style
-===========================================*/
 
 section {
   grid-area: section;
@@ -184,12 +163,8 @@ input:hover, button:hover {
 }
 
 
-/* FOOTER style
-===========================================*/
-
 footer {
   grid-area: footer;
-  /* background-image: url('img/footer.jpg'); */
   background-color: #abddc4;
   color: white;
   box-shadow: auto rgba(0, 0, 0, 0.3);
@@ -224,13 +199,6 @@ footer .div-boton3 {
   margin: auto;
 }
 
-/* MEDIDAS
-===========================================
-*/
-
-/*400px X 600px
-Extra small devices (phones, 
-600px and down)*/
 
 @media only screen and (max-width: 400px) {
   

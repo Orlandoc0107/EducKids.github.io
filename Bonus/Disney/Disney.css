@@ -14,39 +14,18 @@ Importacion de Font Localmente
 
 :root {
   --color-1: #790d31;
-  --color-1-0: #d61354;
-  /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
   --color-2: #dd6e42;
   --color-3: #f94a29;
-  --color-2-0: #dd6e4295;
-  --color-3-0: #f94a2995;
-  --color-4: #fce22a;
   --color-5: #bee7e8;
   --color-6: #30e3df;
   --color-7: #000000;
   --color-8: #a9a9a9;
-  --color-9: #d2b48c;
-  --color-10: #c0c0c0;
-  --color-11: #ffd700;
-  --color-12: #d3d3d3;
-  --color-13: #ffffff;
-  --color-14: #87ceeb;
   --color-15: #00ced1;
-  --color-16: #00ff7f;
   --color-17: #7fff00;
-  --color-18: #ffe5b4;
-  --color-19: #ff69b4;
-  --color-20: #800080;
-  --color-21: #ffa500;
-  --color-22: #ff0000;
-  --color-23: #ffff00;
-  --color-24: #00ff00;
-  --color-25: #0000ff;
-  --color-26: #e6e6fa;
   --color-principal: #abddc4;
   --color-30claro: #ea9c94;
-  --color-31: #eb7067;
 }
+
 
 /*
 Plantenado definiciones 

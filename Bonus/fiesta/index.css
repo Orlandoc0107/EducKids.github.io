@@ -5,43 +5,14 @@
 /* Creamos Variable de colores para nuetro css */
 
 :root {
-    --color-1: #790d31;
-    --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es clor pero mas claro */
-    --color-2: #DD6E42;
-    --color-3: #F94A29;
-    --color-2-0: #DD6E4295;
-    --color-3-0: #F94A2995;
-    --color-4: #FCE22A;
-    --color-5: #BEE7E8;
-    --color-6: #30E3DF;
-    --color-7: #000000;
-    --color-8: #A9A9A9;
-    ---color-9: #D2B48C;
-    --color-10: #C0C0C0;
-    --color-11: #FFD700;
-    --color-12: #D3D3D3;
-    --color-13: #FFFFFF;
-    --color-14: #87CEEB;
-    --color-15: #00CED1;
-    --color-16: #00FF7F;
-    --color-17: #7FFF00;
-    --color-18: #FFE5B4;
-    --color-19: #FF69B4;
-    --color-20: #800080;
-    --color-21: #FFA500;
-    --color-22: #FF0000;
-    --color-23: #FFFF00;
-    --color-24: #00FF00;
-    --color-25: #0000FF;
-    --color-26: #E6E6FA;
-    --color-principal: #abddc4;
-    --color-30claro: #ea9c94;
-    --color-31: #eb7067;
+  --color-1: #790d31;
+  --color-2: #DD6E42;
+  --color-3: #F94A29;
+  --color-5: #BEE7E8;
+  --color-principal: #abddc4;
+  --color-30claro: #ea9c94;
+  --color-31: #eb7067;
 }
-
-/*
-Plantenado definiciones 
-*/
 
 * {
 padding: 0%;
@@ -57,16 +28,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5%;
   margin-top: 5%;
 }
-/* configuramos el Body Para que trabaje con grid */
 
 body {
   display: grid;
   grid-template-columns: 10% 60% 30%;
   grid-template-rows: 10% auto 5%;
   grid-template-areas:
-    "header header header"
-    "nav section aside"
-    "footer footer footer";
+      "header header header"
+      "nav section aside"
+      "footer footer footer";
   background-image: url('img/body.jpg');
   font-family: 'Schoolbell', cursive;
   background-size: cover;
@@ -76,30 +46,18 @@ body {
 header {
   grid-area: header;
   background-image: url('img/header.jpg');
-  /* box-shadow: auto rgba(0, 0, 0, 0.3); */
-  /* border: auto solid #7a7777; */
-  /* border-radius: 3%; */
-  /* Aqui encontraras el codigo del Logo */
   display: grid;
   grid-template-columns: 1fr 9fr;
   grid-template-rows: auto;
   grid-template-areas: "logo titulo";
-  /* padding: auto; */
-  /* margin: auto; */
-  /* width: 100%; */
-  /* height: auto; */
 }
 
 header .titulo {
   grid-area: titulo;
-  padding: auto;
-  margin: auto;
   font-size: 1vw;
 }
 header .logo {
   grid-area: logo;
-  margin: 0;
-  padding: 0;
   width: 400%;
   height: 100%;
 }
@@ -133,27 +91,29 @@ nav {
 }
 
 nav li {
-padding-bottom: 5%;
-padding-left: 0%;
+  padding-bottom: 5%;
+  padding-left: 0%;
 }
 
-nav:hover{
-  background-color:var(--color-principal);
+nav:hover {
+  background-color: var(--color-principal);
 }
 
-nav li:hover{
-  font-size:x-large;
+nav li:hover {
+  font-size: x-large;
 }
 
 nav {
-  width:max-content;
+  width: max-content;
 }
-/* Aqui comenzamos a configurar la Section */
+
+/* Estilos para la sección */
 section {
   grid-area: section;
   font-size: larger;
 }
 
+/* Estilos para la tabla de Presupuesto */
 section .Presupuesto {
   background-color: var(--color-14);
   border-radius: 2%;
@@ -208,6 +168,7 @@ section .datosCliente input {
   text-align: center;
 }
 
+/* Estilos para la barra lateral (aside) */
 aside {
   grid-area: aside;
   text-align: center;
@@ -228,10 +189,11 @@ aside img {
   margin: 10px;
   text-align: center;
 }
-/* Inicio de opacidad */
+
+/* Efecto de opacidad en las imágenes al hacer hover */
 aside img:hover {
   animation: cambia-opacidad 1s infinite;
-  background-color:var(--color-15);
+  background-color: var(--color-15);
   border-radius: 80%;
 }
 

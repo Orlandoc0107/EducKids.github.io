@@ -8,37 +8,16 @@
 
 :root {
   --color-1: #790d31;
-  --color-1-0: #d61354; /* cuando los colores tienen estos nombres quiere decir que es color pero mas claro */
-  --color-2: #DD6E42;
-  --color-3: #F94A29;
-  --color-2-0: #DD6E4295;
-  --color-3-0: #F94A2995;
-  --color-4: #FCE22A;
-  --color-5: #BEE7E8;
-  --color-6: #30E3DF;
+  --color-2: #dd6e42;
+  --color-3: #f94a29;
+  --color-5: #bee7e8;
+  --color-6: #30e3df;
   --color-7: #000000;
-  --color-8: #A9A9A9;
-  --color-9: #D2B48C;
-  --color-10: #C0C0C0;
-  --color-11: #FFD700;
-  --color-12: #D3D3D3;
-  --color-13: #FFFFFF;
-  --color-14: #87CEEB;
-  --color-15: #00CED1;
-  --color-16: #00FF7F;
-  --color-17: #7FFF00;
-  --color-18: #FFE5B4;
-  --color-19: #FF69B4;
-  --color-20: #800080;
-  --color-21: #FFA500;
-  --color-22: #FF0000;
-  --color-23: #FFFF00;
-  --color-24: #00FF00;
-  --color-25: #0000FF;
-  --color-26: #E6E6FA;
+  --color-8: #a9a9a9;
+  --color-15: #00ced1;
+  --color-17: #7fff00;
   --color-principal: #abddc4;
   --color-30claro: #ea9c94;
-  --color-31: #eb7067;
 }
 
 
@@ -92,14 +71,6 @@ iframe{
   height: 400px;
 }
 
-/* Estilos del contenido */
-
-/* MEDIDAS
-===========================================
-*/
-/*400px X 600px
-Extra small devices (phones, 
-600px and down)*/
 
 @media only screen and (max-width: 400px) {
   nav {
@@ -117,11 +88,10 @@ Extra small devices (phones,
 
   iframe {
     width: 100%;
-    height: 300px; /* Se ajusta la altura según tus necesidades */
+    height: 300px;
   }
 }
 
-/* 600px */
 
 @media only screen and (max-width: 600px) {
   nav {
@@ -139,11 +109,9 @@ Extra small devices (phones,
 
   iframe {
     width: 100%;
-    height: 350px; /* Se ajusta la altura según tus necesidades */
+    height: 350px; 
   }
 }
-
-/* 650 */
 
 @media only screen and (max-width: 400px) {
   nav {
@@ -161,11 +129,10 @@ Extra small devices (phones,
 
   iframe {
     width: 100%;
-    height: 300px; /* Se ajusta la altura según tus necesidades */
+    height: 300px; 
   }
 }
 
-/* 600px */
 
 @media only screen and (max-width: 650px) {
   nav {
@@ -183,6 +150,6 @@ Extra small devices (phones,
 
   iframe {
     width: 100%;
-    height: 350px; /* Se ajusta la altura según tus necesidades */
+    height: 350px; 
   }
 }

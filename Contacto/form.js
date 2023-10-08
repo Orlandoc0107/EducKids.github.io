@@ -1,5 +1,4 @@
 function cargarDatos() {
-  // Obtener los valores de los campos del formulario
   let nombre = document.getElementsByName("nombre")[0].value;
   let apellido = document.getElementsByName("apellido")[0].value;
   let edad = document.getElementsByName("edad")[0].value;
@@ -7,7 +6,6 @@ function cargarDatos() {
   let email = document.getElementsByName("email")[0].value;
   let texto = document.getElementById("texto").value;
 
-  // Validar los datos ingresados
   if (nombre.length < 2) {
     alert("El nombre debe tener al menos 2 caracteres");
     return false;
@@ -37,16 +35,10 @@ function cargarDatos() {
     return false;
   }
 
-  // Validar los datos ingresados
-  // ...
-
-    // Crear una cadena de consulta con los valores de los campos
     let queryString = `nombre=${nombre}&apellido=${apellido}&edad=${edad}&dni=${dni}&email=${email}&texto=${texto}`;
 
-    // Enviar la cadena de consulta a la página de destino
     let url = `validacion.html?${queryString}`;
     window.location.href = url;
   
-    // Detener el envío del formulario
     return false;
 }
